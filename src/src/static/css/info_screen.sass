@@ -1,0 +1,105 @@
+@use './colors.sass' as colors
+@use './fonts.sass' as font 
+
+.info-display-container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    width: 100% !important
+    height: 100%
+    
+.info-display
+    position: relative
+    width: 100% !important
+    box-sizing: border-box
+    padding: 10px
+    display: grid
+    column-gap: 20px
+    gap: 20px
+    grid-template-columns: 1fr 1fr 1fr
+
+.need-display
+    width: 100%
+    height: 100%
+    background-color: colors.$dark0
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+    padding: 10px
+    user-select: none
+    border-radius: 5px
+    transition: 0.1s linear
+
+.need-text
+    position: relative
+    font-size: 13px
+    font-family: "Unbounded", sans-serif
+    color: colors.$dark0
+
+.need-number-text
+    font-family: "Unbounded", sans-serif
+    color: colors.$dark0
+    font-size: 50px
+
+.significance-container
+    background-color: #f86400
+
+.significance-container:hover
+    background-color: colors.$dark0
+
+.significance-container:hover .significance
+    color: #f86400
+
+.growth-container
+    background-color: #f79500
+
+.growth-container:hover
+    background-color: colors.$dark0
+
+.growth-container:hover .growth
+    color: #f79500
+
+.variety-container
+    background-color:#ebb652
+
+.variety-container:hover
+    background-color: colors.$dark0
+
+.variety-container:hover .variety
+    color: #ebb652
+
+.certainty-container
+    background-color: grey
+
+.certainty-container:hover
+    background-color: colors.$dark0
+
+.certainty-container:hover .certainty
+    color: grey
+
+.contribution-container
+    background-color: #0e65a3
+
+.contribution-container:hover
+    background-color: colors.$dark0
+
+.contribution-container:hover .contribution
+    color: #0e65a3
+
+.love-container
+    background-color: #ec2c04 !important
+
+.love-container:hover
+    background-color: colors.$dark0 !important
+
+.love-container:hover .love
+    color: #ec2c04 !important
+
+
+.need-precent-container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    box-sizing: border-box
+    padding-top: 20px

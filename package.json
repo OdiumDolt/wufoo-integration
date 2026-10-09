@@ -1,0 +1,16 @@
+{
+  "name": "wufoo-proxy",
+  "version": "1.0.0",
+  "description": "a proxy for wufoos backend api",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node ./server/index.js"
+  },
+  "author": "Rohn Heppner",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "request-promise": "^4.2.6"
+  }
+}

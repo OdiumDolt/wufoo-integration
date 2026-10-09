@@ -1,0 +1,47 @@
+@use './colors.sass' as colors
+@use './fonts.sass' as font 
+    
+.clear-background-container
+    position: relative
+    width: fit-content
+    border-radius: 6px
+    backdrop-filter: blur(2px)
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%)
+    background-color: rgb(228 228 228 / 5%)
+
+.dark-background-container
+    position: relative
+    width: fit-content
+    border-radius: 6px
+    background-color: colors.$dark1
+
+.basic-font
+    font-family: "Roboto", sans-serif
+    color: colors.$light6
+
+.unbounded-font
+    font-family: "Unbounded", sans-serif
+    color: colors.$light6
+    font-size: 15px
+
+.orange-text
+    color: colors.$orange0
+
+.centered-text
+    text-align: center
+
+.small-button
+    padding: 10px
+    color: colors.$orange0
+    font-family: "Roboto", sans-serif
+    background-color: colors.$dark0
+    border: colors.$dark0 solid 2px
+    border-radius: 5px
+    width: fit-content
+    transition: 0.1s ease-in
+    user-select: none
+
+.small-button:hover
+    background-color: colors.$orange0
+    color: colors.$dark0
+    border-color: colors.$orange0

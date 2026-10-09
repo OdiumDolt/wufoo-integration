@@ -1,0 +1,41 @@
+@use 'colors.sass' as colors
+
+
+.question-input-container
+    width: 100% !important
+    height: 100%
+    padding: 20px
+    box-sizing: border-box
+    border-radius: 6px
+    margin: auto
+    display: flex
+    flex-direction: column
+    gap: 30px
+    max-height: 1000px
+    overflow-y: scroll
+    scrollbar-width: thin
+
+.question-input-container::-webkit-scrollbar 
+  width: 12px
+
+
+.question-input-container::-webkit-scrollbar-thumb
+    background-color: colors.$orange0
+    border-radius: 20px
+    border: 3px solid colors.$dark1
+    padding: 2px
+
+.question-assingment-container
+  display: flex
+  justify-content: space-between
+  gap: 10px
+
+
+.settings-selector
+  height: 20px
+  outline: none
+  background-color: colors.$orange0
+  color: colors.$dark1
+  border: solid 1px colors.$orange0
+  border-radius: 4px
+  user-select: none

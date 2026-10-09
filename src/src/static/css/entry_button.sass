@@ -1,0 +1,27 @@
+@use 'colors.sass' as colors
+@use 'fonts.sass' as fonts
+
+
+.date-text
+    font-size: 10px
+    user-select: none
+
+.name-text
+    user-select: none
+    font-size: 20px
+    display: flex
+
+.entry-button-container
+    background-color: colors.$dark0
+    box-sizing: border-box
+    padding: 10px
+    border-radius: 5px
+    transition: 0.1s linear
+    display: flex
+    flex-direction: column
+
+.entry-button-container:hover
+    background-color: colors.$orange0
+
+.entry-button-container:hover .name-text
+    color: black
